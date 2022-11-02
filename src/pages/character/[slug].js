@@ -1,6 +1,14 @@
 import { useRouter } from 'next/router';
 
+import { SectionHeroChracter } from '../../components/details/SectionHeroCharacter';
+import { ListCharacters } from '../../components/listCharacters';
+
 export default function PageCharacter() {
   const route = useRouter();
-  return <h1>{JSON.stringify(route.query)}</h1>;
+  return (
+    <>
+      <SectionHeroChracter />
+      <ListCharacters />
+    </>
+  );
 }
