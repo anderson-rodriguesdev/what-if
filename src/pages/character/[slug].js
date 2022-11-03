@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { SectionHeroChracter } from '../../components/details/SectionHeroCharacter';
 import { ListCharacters } from '../../components/listCharacters';
 import { PageTitle } from '../../components/PageTitle';
@@ -5,6 +6,11 @@ import { PageTitle } from '../../components/PageTitle';
 import { getPrismicClient } from '../../service/prismic';
 
 export default function PageCharacter({ character, characters }) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <p>Carregando...</p>;
+  }
   return (
     <>
       <PageTitle
