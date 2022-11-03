@@ -12,7 +12,7 @@ const socials = [
   { name: 'Instagram', url: '#', icon: IconInstagram },
 ];
 
-export function SectionHero() {
+export function SectionHero({ data }) {
   return (
     <SectionHeroStyle>
       <Container>
@@ -31,20 +31,17 @@ export function SectionHero() {
         </AreaSocial>
         <ContextText>
           <div className="left">
-            <h3>COMING SON</h3>
-            <h1>Marvel's WHAT IF... ?</h1>
-            <p>
-              Disponível no Disney+, What If… ? é uma série de animação que leva
-              o público para um terreno desconhecido ao contar, de forma
-              alternativa, momentos cruciais do Universo Cinematográfico Marvel,
-              imaginando o que teria acontecido aos super-heróis se a história
-              fosse totalmente diferente e se passasse em outra realidade.
-            </p>
-            <a href="" target="_blank" rel="noreferrer">
-              Saiba Mais
+            <h3>{data.subtitle_hero}</h3>
+            <h1>{data.title_hero}</h1>
+            <p>{data.description_hero[0].text}</p>
+            <a href={data.url_button} target="_blank" rel="noreferrer">
+              {data.label_button}
             </a>
           </div>
-          <PopupVideo></PopupVideo>
+          <PopupVideo
+            label={data.label_trailer}
+            thumb={data.thumbnail_trailer.url}
+          />
         </ContextText>
       </Container>
     </SectionHeroStyle>

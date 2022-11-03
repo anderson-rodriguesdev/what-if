@@ -1,0 +1,33 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "character",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "slug": "television",
+    "image_character": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43"
+    },
+    "name_character": "coach",
+    "description_character": [
+      {
+        "type": "paragraph",
+        "text": "Sit magna non cupidatat commodo qui proident laborum pariatur occaecat minim et. Proident velit anim fugiat proident cupidatat esse qui eiusmod ullamco est in consectetur pariatur.",
+        "spans": []
+      }
+    ]
+  }
+}

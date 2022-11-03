@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 import IconPlay from '../../assets/play.svg';
 
-export function PopupVideo() {
+export function PopupVideo({ label, thumb }) {
   return (
     <StyledPopupVideo>
-      <span>ASSISTA AO TRAILER</span>
-      <button>
+      <span>{label}</span>
+      <button style={{ background: `url(${thumb}) no-repeat center center` }}>
         <div>
           <Image src={IconPlay} alt="Ícone Play Vídeo" />
         </div>

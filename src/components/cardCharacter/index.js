@@ -3,12 +3,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { StyleCard } from './styles';
 
-export function CardCharacter({ image, name, slug }) {
+export function CardCharacter({ image, name, slug, alt }) {
   return (
     <StyleCard>
       <Link href={`/character/${slug}`}>
         <div className="image">
-          <Image src={image} alt="Character" width="280" height="372" />
+          <Image src={image} alt={alt} width="280" height="372" />
         </div>
         <div className="info">
           <div className="name">

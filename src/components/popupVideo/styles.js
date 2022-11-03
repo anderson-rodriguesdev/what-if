@@ -1,7 +1,5 @@
 import { styled } from '../../styles';
 
-import bgThumb from '../../assets/thumb-video.png';
-
 export const StyledPopupVideo = styled('div', {
   width: '100%',
   maxWidth: '31.2rem',
@@ -20,7 +18,6 @@ export const StyledPopupVideo = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: `url(${bgThumb.src}) no-repeat center center`,
     border: 0,
     borderRadius: '1rem',
     '&:hover': {
