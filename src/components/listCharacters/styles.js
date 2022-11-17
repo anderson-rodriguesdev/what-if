@@ -34,6 +34,14 @@ export const StyleSectionCharacters = styled('section', {
       },
     },
   },
+  '@tablet': {
+    '.title': {
+      justifyContent: 'center',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      padding: '0 2rem',
+    },
+  },
 });
 
 export const StyleListCharacters = styled('div', {
@@ -46,5 +54,13 @@ export const StyleListCharacters = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  '@tablet': {
+    gridTemplateColumns: 'repeat(2,1fr)',
+    width: 'max-content',
+    margin: '0 auto',
+  },
+  '@mobile': {
+    gridTemplateColumns: '1fr',
   },
 });

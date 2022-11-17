@@ -37,4 +37,7 @@ export const StyledPopupVideo = styled('div', {
       transition: 'transform .3s ease',
     },
   },
+  '@tablet': {
+    display: 'none',
+  },
 });

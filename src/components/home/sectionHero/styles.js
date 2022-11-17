@@ -26,6 +26,13 @@ export const SectionHeroStyle = styled('section', {
     backgroundImage: 'linear-gradient(transparent,#000000)',
     zIndex: -1,
   },
+  '@tablet': {
+    height: 'auto',
+    [`${Container}`]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+  },
 });
 
 export const AreaSocial = styled('div', {
@@ -47,6 +54,21 @@ export const AreaSocial = styled('div', {
       a: {
         display: 'block',
         cursor: 'pointer',
+      },
+    },
+  },
+  '@tablet': {
+    alignSelf: 'flex-start',
+    marginBottom: '4rem',
+    width: '12.8rem',
+    ul: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      li: {
+        '&:not(:last-child)': {
+          marginBottom: 0,
+          marginRight: '3.2rem',
+        },
       },
     },
   },
@@ -102,6 +124,19 @@ export const ContextText = styled('div', {
       transition: 'filter .3s ease',
       '&:hover': {
         filter: 'brightness(0.8)',
+      },
+    },
+  },
+  '@tablet': {
+    paddingLeft: '2rem',
+    paddingRight: '2rem',
+    flexDirection: 'column',
+    alignItems: 'center',
+    borderRight: 'none',
+    '.left': {
+      a: {
+        maxWidth: 'max-content',
+        margin: '0 auto',
       },
     },
   },

@@ -26,6 +26,26 @@ export const StyleFooter = styled('footer', {
         maxWidth: '59.3rem',
         marginLeft: '18.6rem',
       },
+      '@tablet': {
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '2rem',
+        margin: '0 auto',
+        p: {
+          textAlign: 'center',
+          marginLeft: 'initial',
+        },
+      },
+      '@mobile': {
+        p: {
+          fontSize: '1.2rem',
+        },
+      },
+    },
+    '@tablet': {
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '2rem',
     },
   },
 });

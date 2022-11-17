@@ -5,6 +5,9 @@ import { Container } from '../../../styles/global';
 export const SectionCharacterStyle = styled('section', {
   marginTop: '9.6rem',
   height: '63.1rem',
+  '@tablet': {
+    height: 'auto',
+  },
   borderBottom: '1px solid rgba(255,255,255,0.2)',
   [`${Container}`]: {
     display: 'flex',
@@ -12,6 +15,9 @@ export const SectionCharacterStyle = styled('section', {
     height: '100%',
     borderLeft: '1px solid rgba(255,255,255,0.2)',
     borderRight: '1px solid rgba(255,255,255,0.2)',
+    '@tablet': {
+      flexDirection: 'column',
+    },
   },
   '.image': {
     borderRadius: '.5rem',
@@ -59,6 +65,13 @@ export const SectionCharacterStyle = styled('section', {
         fontSize: '1.6rem',
         lineHeight: '2.4rem',
         color: '$gray400',
+      },
+    },
+    '@tablet': {
+      marginLeft: 'initial',
+      marginBottom: '4rem',
+      span: {
+        display: 'none',
       },
     },
   },
